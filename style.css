@@ -1,0 +1,107 @@
+body{
+    font-family: 'Poppins', sans-serif, Arial; /* Definisco anche un font Web Safe alternativo (Arial) nel caso in cui "Poppins" non fosse disponibile */
+    background-color: #968f60; /* Imposto un colore nel caso in cui l'immagine non fosse disponibile */
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container{
+    background-color: #968f60; /* Imposto un colore alternativo nel caso in cui il browser non fosse in grado di leggere il valore RGBA */
+    background-color: rgba(0,0,0,0.6);
+    margin: auto;
+    padding: 5%;
+    border-radius: 10px;
+    width: 60%;
+}
+
+/* CSS <header> e figli*/
+header{
+    color: #00dd00;
+    text-align: center;
+}
+
+header img{
+    width: 30%;
+    height: auto;;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header h1{
+    display: inline;
+}
+
+/* CSS <nav> */
+nav{
+    background-color: #00dd00;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+nav input[type="button"]{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS <main> */
+main{
+    width: 80%;
+    display: block;
+    color: white;
+    margin-top: 3%;
+}
+
+main > div{
+    margin-bottom: 3%;
+}
+
+/* CSS OGGETTI LISTA MONOPATTINI */
+.object_name{
+    display: block;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.object_name:before{
+    content: '\2BC0   ';
+}
+
+.object_info{
+    display: inline-block;
+
+}
+
+.object_info:before{
+    content: '\21A6  '
+}
+
+.object_info:after{
+    content: '\A Stato carica:';
+    white-space: pre-wrap;
+}
+
+/* CSS PER BARRE DI CARICA */
+.charge{
+    height: 25px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.high{
+    background-color: #1ec31e;
+    width: 70%;
+}
+
+.medium{
+    background-color: #f5b453;
+    width: 40%;
+}
+
+.low{
+    background-color: #be4141;
+    width: 20%;
+}
